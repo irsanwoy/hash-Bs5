@@ -55,3 +55,32 @@ submitBtn.addEventListener('click', function() {
     }
   }
 });
+
+closeBtn.addEventListener('click', function() {
+  alert('Untuk menutup tab ini, silakan gunakan tombol close/tab yang disediakan oleh peramban Anda.');
+});
+
+
+// Menambahkan event listener untuk menu About
+const aboutMenu = document.querySelector('.navbar-nav .nav-link[href="#about"]');
+aboutMenu.addEventListener('click', function(event) {
+  event.preventDefault();
+  // Tambahkan kode di sini untuk menampilkan halaman About atau melakukan tindakan lainnya
+  alert('Halaman About');
+});
+
+// Menambahkan event listener untuk menu Program
+const programMenu = document.querySelector('.navbar-nav .nav-link[href="#program"]');
+programMenu.addEventListener('click', function(event) {
+  event.preventDefault();
+  // Tambahkan kode di sini untuk menampilkan halaman Program atau melakukan tindakan lainnya
+  alert('Halaman Program');
+});
+
+// Menambahkan event listener untuk menu Call Me
+const callMeMenu = document.querySelector('.navbar-nav .nav-link[href="#callme"]');
+callMeMenu.addEventListener('click', function(event) {
+  event.preventDefault();
+  // Tambahkan kode di sini untuk menampilkan halaman Call Me atau melakukan tindakan lainnya
+  alert('Halaman Call Me');
+});
